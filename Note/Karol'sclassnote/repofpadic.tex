@@ -1,0 +1,258 @@
+\documentclass{amsart}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{mathrsfs}
+\usepackage{stmaryrd}
+\usepackage{mathtools}
+\usepackage{subfiles}
+\usepackage[sans]{dsfont}
+\usepackage{enumerate}
+\usepackage{fullpage}
+\usepackage{tikz}
+% \usepackage{marginnote}
+\usepackage{float}
+\usepackage{cancel}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{calligra}
+\usepackage{MnSymbol}
+% \usepackage{setspace}
+\usepackage{hyperref}
+% \usepackage{showkeys}
+% \usepackage{lastpage}
+% \usepackage{fancyhdr}
+\usepackage[all]{xy}
+\usepackage[capitalize]{cleveref}
+
+
+
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{calc}
+
+\newtheorem*{clm*}{Claim}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{fact}[thm]{Fact}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{clm}[thm]{Claim}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{xca}[thm]{Exercise}
+\newtheorem{axiom}[thm]{Axiom}
+
+\theoremstyle{remark}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{setup}[thm]{Setup}
+\newtheorem{cond}[thm]{Condition}
+\newtheorem{cons}[thm]{Construction}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem{ques}[thm]{Question}
+
+\numberwithin{equation}{section}
+
+\DeclareMathOperator{\aim}{Im}
+\DeclareMathOperator{\aut}{Aut}
+\DeclareMathOperator{\aend}{End}
+\DeclareMathOperator{\ahom}{Hom}
+\DeclareMathOperator{\aker}{Ker}
+\DeclareMathOperator{\ann}{Ann}
+\DeclareMathOperator{\ass}{Ass}
+\DeclareMathOperator{\chr}{char}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\coker}{Coker}
+\DeclareMathOperator{\colim}{Colim}
+\DeclareMathOperator{\depth}{depth}
+\DeclareMathOperator{\der}{Der}
+\DeclareMathOperator{\ext}{Ext}
+\DeclareMathOperator{\fr}{Frac}
+\DeclareMathOperator{\gr}{gr}
+\DeclareMathOperator{\hght}{ht}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\limit}{Lim}
+\DeclareMathOperator{\mor}{Mor}
+\DeclareMathOperator{\op}{op}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\proj}{Proj}
+\DeclareMathOperator{\pd}{pd}
+\DeclareMathOperator{\red}{red}
+\DeclareMathOperator{\rk}{rank}
+\DeclareMathOperator{\SHom}{\mathscr{H}\text{\kern -3pt {\calligra\large om}}\,}
+\DeclareMathOperator{\SKer}{\mathscr{K}\text{\kern -3pt {\calligra\large er}}\,}
+\DeclareMathOperator{\SDer}{\mathscr{D}\text{\kern -2pt {\calligra\large er}}\,}
+\DeclareMathOperator{\SEnd}{\mathscr{E}\text{\kern -3pt {\calligra\large nd}}\,}
+\DeclareMathOperator{\SSym}{\mathscr{S}\text{\kern -3pt {\calligra\large ym}}\,}
+\DeclareMathOperator{\soc}{soc}
+\DeclareMathOperator{\spec}{Spec}
+\DeclareMathOperator{\supp}{Supp}
+\DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\tor}{Tor}
+\DeclareMathOperator{\upth}{th}
+
+\newcommand{\mbb}[1]{\mathbb{#1}}
+\newcommand{\bA}{\mbb{A}}
+\newcommand{\bH}{\mbb{H}}
+\newcommand{\bP}{\mbb{P}}
+\newcommand{\bF}{\mbb{F}}
+\newcommand{\CC}{\mbb{C}}
+\newcommand{\QQ}{\mbb{Q}}
+\newcommand{\NN}{\mbb{N}}
+\newcommand{\RR}{\mbb{R}}
+\newcommand{\ZZ}{\mbb{Z}}
+
+
+% mathscr - msc
+\newcommand{\msc}[1]{\mathscr{#1}}
+\newcommand{\sA}{\msc{A}}
+\newcommand{\sB}{\msc{B}}
+\newcommand{\sC}{\msc{C}}
+\newcommand{\sD}{\msc{D}}
+\newcommand{\sE}{\msc{E}}
+\newcommand{\sF}{\msc{F}}
+\newcommand{\sG}{\msc{G}}
+\newcommand{\sH}{\msc{H}}
+\newcommand{\sI}{\msc{I}}
+\newcommand{\sJ}{\msc{J}}
+\newcommand{\sL}{\msc{L}}
+\newcommand{\sM}{\msc{M}}
+\newcommand{\sN}{\msc{N}}
+\newcommand{\sT}{\msc{T}}
+\newcommand{\sX}{\msc{X}}
+
+% mathfrak - mf
+\newcommand{\mf}[1]{\mathfrak{#1}}
+
+\newcommand{\fb}{\mf{b}}
+\newcommand{\fg}{\mf{g}}
+\newcommand{\fl}{\mf{l}}
+\newcommand{\fm}{\mf{m}}
+\newcommand{\fp}{\mf{p}}
+\newcommand{\fgl}{\mf{gl}}
+
+
+% mathrm - mrm
+\newcommand{\mrm}[1]{\mathrm{#1}}
+\newcommand{\dd}{\mrm{d}}
+\newcommand{\ee}{\mrm{e}}
+\newcommand{\ii}{\mrm{i}}
+\newcommand{\mF}{\mrm{F}}
+\newcommand{\mG}{\mrm{G}}
+\newcommand{\mH}{\mrm{H}}
+\newcommand{\mN}{\mrm{N}}
+\newcommand{\mT}{\mrm{T}}
+
+% mathcal - mcal
+\newcommand{\mcal}[1]{\mathcal{#1}}
+\newcommand{\cA}{\mcal{A}}
+\newcommand{\cB}{\mcal{B}}
+\newcommand{\cC}{\mcal{C}}
+\newcommand{\cL}{\mcal{L}}
+\newcommand{\cN}{\mcal{N}}
+\newcommand{\OO}{\mcal{O}}
+\newcommand{\cR}{\mcal{R}}
+
+
+\newcommand{\dps}{\displaystyle}
+\newcommand{\seq}[3][1]{#2_{#1},\ldots,#2_{#3}}
+
+\newcommand{\rdf}{\mathds{R}}
+\newcommand{\ldf}{\mathds{L}}
+
+% Need package mathtools
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+\DeclarePairedDelimiter\dba{\llangle}{\rrangle}
+\DeclarePairedDelimiter\ps{\llbracket}{\rrbracket}
+\DeclarePairedDelimiter\set{\{}{\}}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+
+
+% \noindent
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5\baselineskip}
+
+
+% Blank box placeholder for figures (to avoid requiring any
+% particular graphics capabilities for printing this document).
+\newcommand{\blankbox}[2]{%
+  \parbox{\columnwidth}{\centering
+    % Set fboxsep to 0 so that the actual size of the box will match the
+    % given measurements more closely.
+    \setlength{\fboxsep}{0pt}%
+    \fbox{\raisebox{0pt}[#2]{\hspace{#1}}}%
+  }%
+}
+
+
+%% Deal with eqref and hypperef
+\makeatletter
+\renewcommand*{\eqref}[1]{%
+  \hyperref[{#1}]{\textup{\tagform@{\ref*{#1}}}}%
+}
+\makeatother
+
+% comment color
+\definecolor{yiwang}{rgb}{1.0,0.078,0.5742}
+% hyperref setup
+\hypersetup{
+  colorlinks = true,
+  % linkcolor = red,
+  % anchorcolor = black,
+  % citecolor = green,
+  % filecolor = cyan,
+  % menucolor = red,
+  % runcolor = cyan,
+  % urlcolor = magenta,
+  allcolors = yiwang
+}
+
+\newcommand{\gal}{\mathsf{Gal}}
+\newcommand{\gl}{\mathsf{GL}}
+\newcommand{\un}{\mathsf{un}}
+\newcommand{\dR}{\mathsf{dR}}
+\newcommand{\et}{\mathsf{\acute{e}t}}
+\newcommand{\cris}{\mathsf{cris}}
+\newcommand{\HT}{\mathsf{HT}}
+
+\begin{document}
+
+\title{$GL_3$ case of Homogeneity result}
+\author{Yiwang Chen}
+\thanks{Compiled on \today}
+
+
+\maketitle
+
+This is just an attempt for note in Karol's class.
+
+\section{summary}
+
+This course is essentially about the (mod $p$) representation of $p$-adic groups
+
+Course will focus on the representation theory of $p$-adic groups like $GL{n(\QQ_p)}$.
+\\Motivation: They show up in the langlands program.
+
+Warm up: Quadratic reciprocity
+
+Suppose that $p$ and $l$ are two primes, and $p \equiv l \equiv 1 \mod 4$. Then we have that \[x^2 \equiv p \mod l \text{ has a solution} \equiv x^2 \equiv l \mod p \text{ has a solution}\]
+(often written $(p/l)=(l/p)$ in legendre symbol).
+
+This is proved by Gauss.
+
+Modern viewpoint: Classfield theory by Takagi, Artin 1920s
+
+Facts(Sprcialized to out situation)
+\begin{itemize}
+  \item By choice of $p$, we have that $\Q \subset \Q(\sqrt{p})\subset \Q(\zeta_p)$.
+  \item Invlusions induce $\rho$:
+  \[Gal(\Q(\zeta_p)/\Q) \to Gal(\Q{\sqrt{p}}/\Q)\simeq {\pm 1}\subset \C{\times}\]
+  \item $\forall q \neq p$ prime, $\exists$ an element $Frob_{q} \in Gal(\Q(\zeta_p)/\Q)$ such that $Frob_{q}(x)=x^{q}$ on ''$\overline{F_q}$ `'.
+  \item There is an isomorphism $\alpha:(\Z/p\Z){\times} \to Gal(\Q(\zeta_p)/\Q)$ taking $a \mapsto (\zeta_p \mapsto \zeta_p^a)$, so it takes $q \neq p \mapsto Frob_{q}$.
+\end{itemize}
+
+
+\end{document}

@@ -1,0 +1,201 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsfonts,amsmath, amssymb,latexsym,mathrsfs}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{enumitem}
+\setlength{\parindent}{0pt}
+\usepackage{tikz-cd}
+\usepackage{fancyhdr}
+
+
+
+
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}[section]
+
+\newtheorem{prop}{Proposition}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{lem}{Lemma}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{cor}{Corollary}[section]
+
+
+\date{}
+\title{Final Exam Summary(After Exam 2)}
+
+
+\begin{document}
+\maketitle
+
+\section{Power Series}
+\begin{definition}
+	A power series about $x = a$ is a sum of constants times powers of $(x - a)$: 
+	$C_0 + C_1(x - a) + C_2(x - a)^2 + \ldots + C_n(x - a)^n + \ldots =	\sum_{n
+	=0}^{\infty}	C_n(x - a)^n$.
+\end{definition}
+
+If we fix a specific value of $x$, we can just consider plugging x with the value we have, and convergence here makes sense.
+
+\begin{definition}
+For a fixed value of $x$, if this sequence of partial sums converges to a limit $L$, that is, if
+$\lim_{n \to \infty}S_n(x) = L$, then we say that the power series converges to $L$ for this value of $x$.
+\end{definition}
+
+Based on the discussion we will see that, The interval of convergence for a power series is usually centered at a point $x=a$, and extends the same length to both side, thus we denote this length as radius of convergence.\\
+
+Moreover, each power series falls into one of the three following cases, characterized by its \textcolor{red}{radius of convergence}, $R$.
+\begin{itemize}
+\item The series converges only for $x = a$; the radius of convergence is defined to be $R = 0$.
+\item The series converges for all values of $x$; the radius of convergence is defined to be
+$R = \infty$.
+\item There is a positive number $R$, called the radius of convergence, such that the series
+converges for $|x - a| < R$ and diverges for $|x - a| > R$. 
+\end{itemize}
+The interval of convergence is the interval between $a - R$ and $a + R$, including any
+endpoint where the series converges.
+\\
+
+Then there is a question arises, how to find this radius of convergence then?\\
+
+This question can be determined by considering using \textcolor{red}{ratio test} on the series, assuming $x\neq a$.
+The details are included in Chapter 9.5 in the book.
+
+\section{Taylor Polynomial and Taylor Series}
+\subsection{Taylor Polynomial}
+If we try to approximate the function locally using a polynomial, there is one thing we want to acquire, i.e. we want the polynomial $P(x)$ with the property that $P^{(n)}(a)=f^{(n)}(a)$ if we approximate the function at the point $x=a$. Considering merely the situation about $x=0$, recall what we did in the class, we will have the following.
+
+\textcolor{red}{Taylor Polynomial of Degree $n$ Approximating $f(x)$ for $x$ near $0$} is \[f(x) \approx P_n(x)
+	= f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \frac{f'''(0)}{3!}x^3 + \frac{f^{(4)}(0)}{4!} x^4 + \ldots + \frac{f^{(n)}(0)}{n!} x^n\]
+	We call $P_n(x)$ the Taylor polynomial of degree $n$ centered at $x = 0$, or the Taylor poly
+	nomial about $x = 0$.\\
+	
+More generally, \textcolor{red}{Taylor Polynomial of Degree $n$ Approximating $f(x)$ for $x$ near $a$} is \[f(x) \approx P_n(x)
+= f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3  + \ldots + \frac{f^{(n)}(a)}{n!} (x-a)^n\]
+We call $P_n(x)$ the Taylor polynomial of degree $n$ centered at $x = a$, or the Taylor poly
+nomial about $x =a$.\\
+
+Notice that Taylor Polynomial of Degree $n$ Approximating $f(x)$ for $x$ near $a$ will have the property that $P_n^{(m)}(a)=f^{(m)}(a)$ for $0 \leq m \leq n$.
+
+\subsection{Taylor Series}
+
+Notice that in the Taylor polynomial, if we let $n$ here goes to infinity, we will get a series $P(x)$ with $P^{(m)}(a)=f^{(m)}(a)$ for $0 \leq m < \infty$ and thus we will expect that the series gives a good approximation about $f(x)$ around $a$, and actually when it converges, it is exactly the value you will get in $f(x)$, and this is called the Taylor Series.
+
+\textcolor{red}{Taylor Series for $f(x)$ about $x=0$} is \[f(x) = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \frac{f'''(0)}{3!}x^3 + \frac{f^{(4)}(0)}{4!} x^4 + \ldots + \frac{f^{(n)}(0)}{n!} x^n+ \ldots \]
+We call $P_n(x)$ the Taylor polynomial of degree $n$ centered at $x = 0$, or the Taylor poly
+nomial about $x = 0$.\\
+
+More generally, \textcolor{red}{Taylor Series for $f(x)$ about $x=a$} is \[f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3  + \ldots + \frac{f^{(n)}(a)}{n!} (x-a)^n+ \ldots \]
+We call $P_n(x)$ the Taylor polynomial of degree $n$ centered at $x = a$, or the Taylor poly
+nomial about $x =a$.\\
+
+
+Moreover, there are \textcolor{red}{several important cases} that we consider, each of them is an Taylor expansion of a function about $x=0$:
+\begin{itemize}
+\item \[e^{x}= 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^5}{5!} + \frac{x^6}{6!} + \frac{x^7}{7!} + \frac{x^8}{8!} + \cdots\text{ converges for all } x\]
+\item \[\sin(x)=\sum\limits_{n=0}^\infty \dfrac{x^{2n+1}}{(2n+1)!}\cdot(-1)^n = x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\dfrac{x^7}{7!}+\dots\text{ converges for all } x\]
+\item \[\cos(x)=\sum\limits_{n=0}^\infty \dfrac{x^{2n}}{(2n)!}\cdot(-1)^n = 1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+\dots \text{ converges for all } x\]
+\item \[(1 + x)^p = \sum_{k=0}^{\infty} \binom{p}{k} x^k= \sum_{k=0}^{\infty} \frac{p!}{k!(p-k)!} x^k=\]\[1 + px + \frac{p(p - 1)}{2!}x^2 + \frac{p(p - 1)(p - 2)}{3!}x^3 + \cdots \text{ converges for } -1 < x < 1.\]
+\item \[\ln(1+x) =\sum_{n = 0}^{\infty}\frac{(-1)^nx^{n+1}}{n+1}= x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\cdots,\]
+
+\end{itemize}
+
+Moreover, we can definitely find Taylor Series based on the existing series using \textcolor{red}{four methods}:
+\begin{itemize}
+	\item Substitude
+	
+Example: Taylor Series about $x=0$ for $f(x)=e^{-x^2}$	
+	
+	\item Differentiate 
+	
+Example: Taylor Series about $x=0$ for $f(x)=\frac{1}{(1-x)^2}$	
+
+	\item Integrate
+	
+Example: Taylor Series about $x=0$ for $f(x)=\arctan x$ (Hint: What is $\frac{d}{dx}(\arctan x)$?)			
+	\item Multiply
+	
+	Example: Taylor Series about $x=0$ for $f(x)=x^2 \sin x$\\
+	Example: Taylor Series about $x=0$ for $f(x)=\sin x \cos x$\\
+	Example: Taylor Series about $x=0$ for $f(x)=e^{\sin x}$\\
+
+\end{itemize}
+
+\section{Parametric Equations and Polar Coordinate}
+\subsection{Parametric Equations}
+To represent the motion of a particle in the $xy$-plane we use two equations, $x=f(t)$ and $y=g(t)$, then at the time $t$ the particle is at the location $(f(t),g(t)$. In this case, we call the equations for $x$ and $y$ the parametric equations, with parametrization $t$.
+
+Remember that, in parametric equation, for the same line, the parametrization is not unique, and the different parametrization encodes two information:\\
+1. Speed of the particle.\\
+2. Direction of the motion.\\
+
+\subsubsection{Special Parametric Equations}
+
+\begin{itemize}
+\item \textcolor{red}{Parametric Equations for a Straight Line}
+
+An object moving along a line through the point $(x_0, y_0)$, with $dx/dt = a$ and $dy/dt = b$,
+has parametric equations
+$x = x_0 + at, y = y_0 + bt$.
+The slope of the line is $m = b/a$.
+\item\textcolor{red}{Parametric Equations for a circle with radius $k$}
+
+An object moving along a circle of radius $k$ counterclockwise has parametric equations
+$x = k\cos(t), y = k\sin(t)$.
+\end{itemize}
+
+
+\subsubsection{Slope and concavity of the curve}
+As we discussed in class, we can think of this as a result due to chain rule if we have that $y=F(x)$ as well. 
+
+But to summarize, we have the \textcolor{red}{slope} of the parametrized curve to be 
+\[\frac{dy}{dx}=\frac{dy/dt}{dx/dt}\]
+and the \textcolor{red}{concavity} of the parametrized curve to be
+\[\frac{d^2y}{dx^2}=\frac{(dy/dx)/dt}{dx/dt}\]
+
+\subsubsection{Speed and distance}
+
+The \textcolor{red}{instantaneous speed} of a moving object is defined to be
+$$v = \sqrt{(dx/dt)^2 + (dy/dt)^2} =\sqrt{(v_x)^2 + (v_y)^2}$$.
+The quantity $v_x = dx/dt$ is the instantaneous velocity in the $x$-direction; $v_y = dy/dt$ is the
+instantaneous velocity in the $y$-direction.
+And we call that $(v_x,v_y)$ to be the velocity vector.
+
+Moreover, the \textcolor{red}{distance} traveled from time $a$ to $b$ is $$\int^b_a v(t) dt = \int_a^b \sqrt{(dx/dt)^2 + (dy/dt)^2} dt$$
+
+\subsection{Polar Coordinate}
+
+Polar coordinates is the coordinates determined by specifying the distance of the point to origin and the angle measured counterclockwise from positive $x$-axis to the line joining the line connecting the point and the origin.
+
+\subsubsection{Relation between Cartesian and Polar}
+
+\textcolor{red}{Cartesian to Polar}: $$(x,y) \to (r= \sqrt{x^2 + y^2}, \theta) \text{ (Here we have that } \tan \theta = \frac{y}{x} \text{)}$$
+Note that $\theta$ does not have to be $\arctan(\frac{y}{x})$!
+
+Polar to Cartesian: $$(r,\theta) \to (x=r \cos \theta, y=r \sin \theta)$$
+
+\subsubsection{Slope, Arc length and Area in Polar Coordinates}
+
+By the relation $x=r \cos \theta, y=r \sin \theta$, given a curve $r=f(\theta)$, we have that $x=f(\theta) \cos \theta, y=f(\theta) \sin \theta$, and thus are parametrized equations of parameter $\theta$. Therefore we have that the \textcolor{red}{slope} of to be 
+\[\frac{dy}{dx}=\frac{dy/d\theta}{dx/d\theta}\]
+
+The \textcolor{red}{arc length} from angle $a$ to $b$ is $$\int_a^b \sqrt{(dx/d\theta)^2 + (dy/d\theta)^2} d\theta=\int_a^b \sqrt{r^2 + (dr/d\theta)^2} d\theta$$
+
+Moreover, due to the fact that the \textcolor{red}{area of the sector} is $1/2 r^2 \theta$, we have that for a curve $r = f(\theta)$, with \textcolor{red}{$f(\theta)$ continuously of the same sign}, the area of the region enclosed is $$\frac{1}{2}\int^{b}_{a}f(\theta)^2 d\theta$$
+
+
+\end{document} 

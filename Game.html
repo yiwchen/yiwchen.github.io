@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Adventure Games</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="images/department.ico">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+        <a href="AAICRA.html" class="title">Adventure games for kid.</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Main -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h2 class="major">Rider of the Star Dragonn.</h2>
+                <p>This is a game and a story of the star dragon riders, the story is going to be updated weekly.</p>
+                <p>The content of the game: <a href="Game/rider.pdf">Here.</a></p>
+                <p>Maps are created and modified using <a href="https://dungeondraft.net/">Dungeon Draft.</a> I might use my own materials if I ever have time to make them.</p>
+                <p>I am making a character card generator for the game as below as well, note that currently you will have to use Fireshot or equivalent software to capture the graph of the card. I am developing the version that is creating a full card graphics, come back soon!</p>
+                <header>
+                    <h2 class="major">RPG Character Generator</h2>
+                </header>
+                <p>How to use? I have a sample here:</p>
+                <!--JavaScript-->
+                <script src="./Game/charactercard.js"></script>
+                <div class="program">
+                    <h3>RPG Character Generator</h3>
+                    <ul class="actions fit">
+                        <li><input type="text" id="cc-name" value="Moby" placeholder="Name" /></li>
+                        <li><input type="text" id="cc-age" value="4" placeholder="Age" /></li>
+                        <li><input type="text" id="cc-hp" value="20" placeholder="Health Point" /></li>
+                        <li><select id="cc-src">
+                                <option value="./Game/sample.png">Sample1</option>
+                                <option value="./Game/sample2.jpg">Sample 2</option>
+                            </select></li>
+                    </ul>
+                    <ul class="actions fit">
+                        <li><input type="text" id="cc-ep" value="20" placeholder="Energy Point" /></li>
+                        <li><input type="text" id="cc-mp" value="10" placeholder="Mathemagic Power" /></li>
+                        <li><input type="text" id="cc-md" value="6" placeholder="Mathemagic Defense" /></li>
+                        <li>
+                            <select id="cc-job-type">
+                                <option value="Warrior">Warrior</option>
+                                <option value="Ninja">Ninja</option>
+                                <option value="Mage">Mage</option>
+                                <option value="Kungfu Panda">Panda</option>
+                                <option value="Pirate">Pirate</option>
+                                <option value="Druid">Druid</option>
+                            </select></li>
+                    </ul>
+                    <ul class="actions fit">
+                        <li><a class="button primary" onclick="cc_Generate()">Generate Character</a></li>
+                        <li><a class="button" onclick="ccctc()">Copy To Clipboard</a></li>
+                    </ul>
+                    <div class="card">
+                        <img src="./Game/sample.png" alt="Avatar" id="cc-pic" style="width:100%">
+                        <div class="container">
+                            <b class="language-tex" id="cc-card">
+                                Name:<br />
+                                Age:<br />
+                                Job:<br />
+                                Health Points:<br />
+                                Energy Points:<br />
+                                Mathemagic Power:<br />
+                                Mathemagic Defense:<br />
+                            </b>
+                        </div>
+                    </div>
+        </section>
+    </div>
+    </section>
+    </div>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; Yiwang Chen. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsfonts,amsmath, amssymb,latexsym,mathrsfs}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{enumitem}
+\setlength{\parindent}{0pt}
+\usepackage{tikz-cd}
+\usepackage{fancyhdr}
+
+
+
+
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}[section]
+
+\newtheorem{prop}{Proposition}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{lem}{Lemma}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{cor}{Corollary}[section]
+
+
+\date{}
+\title{Chapter 5: Definite integral}
+
+
+\begin{document}
+\maketitle
+
+
+
+
+
+
+
+\begin{definition}
+	A definite integral of $f$ from $a$ to $b$ is definted as 
+\[\int_a^bf(x)dx= \lim_{n\rightarrow \infty} \sum_{i=1}^n f(x_i)\Delta x\text{\bf (Limit of Right-hand sum)}\]
+or 
+\[\int_a^bf(x)dx= \lim_{n\rightarrow \infty} \sum_{i=0}^{n-1} f(x_i)\Delta x\text{\bf (Limit of Left-hand sum)}\]
+
+Here, Left-hand sum and Right-hand sum are equal after taking limits and it the the so-called Riemann Sum.
+\end{definition}
+
+
+
+There are two more type of Riemann sum I would like to discuss in the future, which is the Mid sum and the Trapezoidal sum. 
+
+I will only give definition here.
+\[\int_a^bf(x)dx\approx  \sum_{i=0}^{n-1} f(\frac{x_i+x_{i+1}}{2})\Delta x\text{\bf (Mid sum)}\]
+and
+\[\int_a^bf(x)dx\approx \sum_{i=0}^{n-1} \frac{f(x_i)+f(x_{i+1})}{2}\Delta x\text{\bf (Trapezoid sum)}\]
+
+In all these Riemann sum we discussed, we are assuming $\Delta(x)=\dfrac{b-a}{n}$, thus as $n\to \infty$, $\Delta x \to 0$.
+
+Note that \[\frac{LEFT(n)+RIGHT(n)}{2}=TRAP(n)\], \[MID(n)\neq TRAP(n)\].
+
+\newpage
+
+\begin{remark}
+	Properties of definite integral:
+	\begin{enumerate}
+		\item \[\int^a_b f(x) dx = -\int^b_a f(x) dx\]
+		\item \[\int^a_b f(x) dx+\int^b_c f(x) dx=\int^a_c f(x) dx\]
+		\item \[\int^a_b (f(x)\pm g(x)) dx=\int^a_b f(x) dx \pm \int^a_b g(x) dx\]
+		\item \[\int^a_b cf(x) dx = c \int^a_b f(x) dx\]
+		\item Symmetry due to the oddity of the function.
+	\end{enumerate}
+\end{remark}
+
+\hrulefill
+
+\begin{remark}
+	Interpretation of Define Integral as Area under graph of $f$ between $x=a$ and $x=b$, counting positivity.
+\end{remark}
+
+Important cases discussed on Friday's course:
+\begin{enumerate}
+	\item Compute \[\int^{1}_{-1}\sqrt{1-x^2}dx\]
+	\item How about \[\int^{1}_{-1}(\sqrt{1-x^2}-1)dx?\]
+	\item Maybe try\[\int^{0.5}_{-0.5}\tan(x)dx\]
+\end{enumerate}
+
+Find out the answer yourself only geometrically, even you know more techniques!
+
+
+
+More Importantly there are two major topics I want to mention here and maybe discuss:
+
+\begin{itemize}
+	\item When is the estimation done by Riemann sum a underestimate/overestimate?
+	
+\textbf{It is also covered in 7.5, check it out and try problem 2.}
+	
+	\item Error estimation
+	
+	Think about the case where you know that $f(x)$ lies between any pair of $LEFT(n)$ and $RIGHT(n)$, then we see that $|LEFT(n) - f(x)|<|LEFT(n)-RIGHT(n)|=(f(b)-f(a))\Delta x$. This usually gives a bound for $n$.
+\end{itemize}
+
+\hrulefill
+\begin{thm}
+\textbf{The Fundamental Theorem of Calculus} is basically the theorem defined below.
+
+If $f$ is continuous on interval $[a,b]$ and $f(t)=F'(t)$, then \[\int^b_a f(t) dt = F(b)-F(a).\]
+\end{thm}
+\hrulefill
+
+\textbf{Application of Definite Integral}
+
+\begin{enumerate}
+	\item Average value of function $f(x)$ in $[a,b]$ is \[\frac{1}{b-a} \int_{a}^{b}f(x)dx\].
+	
+	Here, think about the integration is analogue to summation in the discrete world, then this average value is the analogue of \[x_{\text{average}}=\frac{x_1+x_2+\ldots+x_n}{1+1+1+\dots}=\frac{x_1+x_2+\ldots+x_n}{n}.\] where in the integration case is actually \[x_{\text{average}}=\frac{\lim_{n\rightarrow \infty} \sum_{i=0}^{n-1} f(x_i)\Delta x}{\lim_{n\rightarrow \infty} \sum_{i=0}^{n-1} 1 \times \Delta x}=\frac{\int_{a}^{b}f(x)dx}{\int_{a}^{b}1 dx}=\frac{1}{b-a} \int_{a}^{b}f(x)dx\]
+\end{enumerate}
+
+
+\end{document} 

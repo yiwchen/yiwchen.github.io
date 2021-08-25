@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsfonts,amsmath, amssymb,latexsym,mathrsfs}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{enumitem}
+\setlength{\parindent}{0pt}
+\usepackage{tikz-cd}
+\usepackage{fancyhdr}
+
+
+
+
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}[section]
+
+\newtheorem{prop}{Proposition}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{lem}{Lemma}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{cor}{Corollary}[section]
+
+
+\date{}
+\title{Chapter 8: Application of integral in real life}
+
+
+\begin{document}
+\maketitle
+
+
+
+\section{Find Area/Volumes by slicing}
+\begin{itemize}
+	\item Compute the area of triangle;
+	\item Compute the area of (semi)circle;
+	\item Compute the volume of a sphere; 
+	\item Compute the volume of a cone with base radius $5$ and height $5$; 
+	\item Volume of revolution: $y = e^{-x}$ from $0$ to $1$ around $x$-axis.
+\end{itemize}
+
+Suggested Problems: $\mathsection$8.1	1-4,10,12,14,16,18,19,21,29,31,37
+
+\section{Volumes of Solids of Revolution}
+There are two methods to find such a volume of solids of revolution(here revolution is important as it brings in the symmetries).
+\subsection{Disk Method}
+
+ One way is using the slicing which is very similar to the 2D case when we try to find the area. This is officially called the Disk Method.
+Check above.
+
+\subsection{Shell Method}
+
+This is not so intuitive that why will we want to consider other method to integrating any function since we already have this disk method. However, consider the following example:
+
+Determine the volume of the solid obtained by rotating the region bounded by $y=(x-1)(x-3)^2$ and the $x$-axis about the $y$-axis.
+
+Try to graph it and see why it is bad.
+
+Thus, the shell method arises naturally as a different approach, as it integrates along an axis perpendicular to the axis of revolution.
+
+\section{Arc length}
+
+\[\text{Arc Length}=\int^b_a\sqrt{1+(f'(x))^2}dx\]
+
+The function we are integrating might not see as intuitive, but when we think about the picture of ''small increment'' as in class, you will see how it is making sense.
+
+Suggested Problems: $\mathsection$8.2 25,27,35,47,49,57,63,65
+
+
+\section{Relation of Integration and Physics}
+
+Think about what integration is doing. Integral is defined as a limit of the Riemann sum, thus what it is doing is exactly the same as what the Riemann sum is doing, furthermore, you can think definite integral as just infinite block Riemann sum.\\
+What we had done in the last section is to find Volumes by integrating, which is the first time we figure out what this mysterious ''f(x)'' in the integration really is, i.e. if it is an area, then $f(x)\Delta x$ is actually a volume, and we are summing many slices/shells of volumes to get the exact amount of volume of the object.\\
+Here, the most essential formula we are using is actually $V=Ah$, where $V$ is the volume of prism/cylinder, $A$ is the area, and $h$ is the height. In the most settings above, we will see $S$ as function of $h$(which is exactly disk method), or sometimes $h$ is a function of $A$( what we only deal are the good cases, where $S$ is a function of $r$ and $h$ is a function of  $r$, since $dS$ is not making sense yet).
+
+\subsection{Mass}
+
+
+Here, the basic formula we are doing is:\begin{enumerate}
+\item One dimensional: $M=\delta l$ where $M$ is the total mass, $\delta$ is the density, $l$ is line.
+\item
+Two dimensional: $M=\delta A$ where $M$ is the total mass, $\delta$ is the density, $A$ is Area.
+\item Three dimensional (real world): $M=\delta V$ where $M$ is the total mass, $\delta$ is the density, $V$ is Volume.
+\end{enumerate}
+
+It is confusing that when should one use which, but if you think about what the UNIT of the density is, it will make sense of itself. 
+
+(Alternative way to think of integration: actually, if you think area as the density of Volume, i.e. think of unit of it as $m^2=m^3/m$, then you will see integration is basically integrating the density to get the total, this is actually the essential picture you should have. In the end of day, they are all just sum.)
+
+
+\subsection{Work}
+
+Key formula we are using:\\\[
+\text{Work done = Force} \cdot \text{Distance}\] or 
+\[W=F\cdot s\]
+
+Integration version:
+\[W = \int^b_a F(x) dx\]
+(Question: why usually not $x = x(F)$?)
+
+
+
+\end{document} 

@@ -1,0 +1,91 @@
+PWD D:/desktop/html5up-hyperspace/Game
+INPUT C:/Users/Jigglypuff/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
+INPUT D:/desktop/html5up-hyperspace/Game/rider.tex
+OUTPUT D:/desktop/html5up-hyperspace/Game/rider.log
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/article.cls
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/article.cls
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/size12.clo
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/size12.clo
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/tfm/public/cm/cmr12.tfm
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/graphics/graphicx.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/graphics/graphicx.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/graphics/keyval.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/graphics/keyval.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/graphics/graphics.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/graphics/graphics.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/graphics/trig.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/graphics/trig.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/graphics-cfg/graphics.cfg
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/graphics-cfg/graphics.cfg
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/graphics-def/pdftex.def
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/graphics-def/pdftex.def
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/inputenc.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/inputenc.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/utf8.def
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/utf8.def
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/t1enc.dfu
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/t1enc.dfu
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/ot1enc.dfu
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/ot1enc.dfu
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/omsenc.dfu
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/omsenc.dfu
+INPUT D:/desktop/html5up-hyperspace/Game/rider.aux
+INPUT D:/desktop/html5up-hyperspace/Game/rider.aux
+OUTPUT D:/desktop/html5up-hyperspace/Game/rider.aux
+INPUT E:/Program Files (x86)/MikTex2.9/tex/context/base/supp-pdf.mkii
+INPUT E:/Program Files (x86)/MikTex2.9/tex/context/base/supp-pdf.mkii
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/oberdiek/epstopdf-base.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/oberdiek/epstopdf-base.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/infwarerr.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/infwarerr.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/oberdiek/grfext.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/oberdiek/grfext.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/kvdefinekeys.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/kvdefinekeys.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/ltxcmds.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/ltxcmds.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/kvsetkeys.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/kvsetkeys.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/etexcmds.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/etexcmds.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/ifluatex.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/ifluatex.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/pdftexcmds.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/pdftexcmds.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT E:/Program Files (x86)/MikTex2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/tfm/public/cm/cmr17.tfm
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/tfm/public/cm/cmr12.tfm
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/tfm/public/cm/cmmi12.tfm
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/tfm/public/cm/cmsy10.tfm
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/tfm/public/cm/cmr10.tfm
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/tfm/public/cm/cmbx10.tfm
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/tfm/public/cm/cmr17.tfm
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/omscmr.fd
+INPUT E:/Program Files (x86)/MikTex2.9/tex/latex/base/omscmr.fd
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/tfm/public/cm/cmsy10.tfm
+OUTPUT D:/desktop/html5up-hyperspace/Game/rider.pdf
+INPUT C:/Users/Jigglypuff/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT D:/desktop/html5up-hyperspace/Game/chap1.jpg
+INPUT D:/desktop/html5up-hyperspace/Game/chap1.jpg
+INPUT D:/desktop/html5up-hyperspace/Game/chap1.jpg
+INPUT D:/desktop/html5up-hyperspace/Game/chap1.jpg
+INPUT D:/desktop/html5up-hyperspace/Game/chap1.jpg
+INPUT D:/desktop/html5up-hyperspace/Game/rider.aux
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT E:/Program Files (x86)/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb

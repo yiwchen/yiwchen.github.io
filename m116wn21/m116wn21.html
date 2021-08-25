@@ -1,0 +1,759 @@
+<!DOCTYPE HTML>
+<!--
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Math 116 Winter 2021</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Main -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">Math 116 Section 042 Calculus II </h1>
+                <h2>Basic Information</h2>
+                <table>
+                    <tr>
+                        <td>Course Title</td>
+                        <td>Calculus II</td>
+                    </tr>
+                    <tr>
+                        <td>Meeting Times</td>
+                        <td>MTTh 11:30 -- 13:00 at Zoom (Link will be sent through email)</td>
+                    </tr>
+                    <tr>
+                        <td>Instructor</td>
+                        <td><a href="../index.html">Yiwang Chen</a></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><a href="mailto:yiwchen@umich.edu">yiwchen@umich.edu</a></td>
+                    </tr>
+                    <tr>
+                        <td>Office</td>
+                        <td>East Hall 5080</td>
+                    </tr>
+                    <tr>
+                        <td>Office Hours</td>
+                        <td>Monday: 2-3(Math lab)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tuesday: 4-5 Thursday: 3-4 (All in Earstern Time)</td>
+                    </tr>
+                    <tr>
+                        <td>Syllabus</td>
+                        <td><a href="./Syllabus/Syllabus.pdf">Click Here</a> </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="link" class="wrapper">
+            <div class="inner">
+                <h2>Important Links</h2>
+                <ul>
+                    <!--
+            <li><a href="announcements.html">Announcements for the class</a> </li>
+            -->
+                    <li><a href="http://instruct.math.lsa.umich.edu/stu-info/">Student Data Form</a></li>
+                    <li><a href="http://www.math.lsa.umich.edu/courses/116/index.html">General Course Website</a> </li>
+                    <li><a href="https://instruct.math.lsa.umich.edu/courses/116/webhw/">Web Homework</a> </li>
+                    <li><a href="http://www.math.lsa.umich.edu/courses/116/3Assignments-W21.html">Team Homework</a></li>
+                    <li><a href="http://www.math.lsa.umich.edu/courses/116/Exams/index.html">Past Exams (with solutions)</a></li>
+                    <li><a href="http://www.math.lsa.umich.edu/courses/sg/">Student Guide</a> (Under construction.)</li>
+                    <li><a href="http://instruct.math.lsa.umich.edu/support/teamhomework/">Team HW Tutorial </a></li>
+                    <li><a href="http://canvas.umich.edu">Canvas Page (Section Grade Usage only)</a></li>
+                    <br>
+                </ul>
+                <h2>Useful links</h2>
+                <ul>
+                    <li><a href="http://prep.math.lsa.umich.edu/pmc/">Math Prep Module (Good website if you want to practice your "prerequisite skills")</a></li>
+                    <li><a href="https://www.desmos.com/">Desmos (Good graphing website)</a></li>
+                    <li><a href="./Note/SuggestedTextbookProblemsW21.pdf">Textbook Problems for practice (a bit outdated but still useful).</a></li>
+                    <li><a href="./Note/StandardCalendar.pdf">Standard Schedule for the class that I am keeping track of.</a></li>
+                </ul>
+                <h2>Some Random Stuff</h2>
+                <a href="https://www.youtube.com/watch?v=heKK95DAKms">Doodling video, fun to watch when you are tired studying.</a>
+                <a href="https://www.pleacher.com/mp/mhumor/coaster.jpg">Fun picture to stare at if you get tired reading books.</a>
+                <br>
+            </div>
+            </ul>
+    </div>
+    </section>
+    <section>
+        <div id="schedule" class="wrapper">
+            <table>
+                <!------------------------->
+                <tr>
+                    <th>Date</th>
+                    <th>Section(s) covered</th>
+                    <th>Notes</th>
+                    <th>Summary</th>
+                </tr>
+                <!------------------------->
+                <tr>
+                    <td>Tuesday, Jan 19th</td>
+                    <td>Review of definite integral 5.1, 5.2</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Syllabus/Syllabus.pdf">Syllabus</a></li>
+                            <li><a href="./files/PreliminaryNote.pdf">Preliminary Materials for review</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Riemann sums (Left and Right)</li>
+                            <li>Definition of definite integral</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday, Jan 21th</td>
+                    <td>Review of definite integral 5.3, 5.4</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter5/ch5.pdf">Summary of Chapter 5</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Fundamental Theorem of Calculus!</li>
+                            <li>Average of function: Application of Definite Integral</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monday, Jan 25th</td>
+                    <td>Review of antiderivative 6.1-6.4</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter6/ch6.pdf">Summary of Chapter 6</a></li>
+                            <li><a href="./Note/Chapter5/ch5problem.pdf">Practice problems for Riemann Sum and FTC</a></li>
+                            <li><a href="./Note/Chapter5/ch5solution.pdf">Practice solutions for Riemann Sum and FTC</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Fundamental Theorem of Calculus!</li>
+                            <li>Antiderivatives</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuesday, Jan 26th</td>
+                    <td>Review of antiderivative 6.1-6.4</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter6/ch6.pdf">Summary of Chapter 6</a></li>
+                            <li><a href="./Note/Chapter5/ch5problem.pdf">Practice problems for Riemann Sum and FTC</a></li>
+                            <li><a href="./Note/Chapter5/ch5solution.pdf">Practice solutions for Riemann Sum and FTC</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Fundamental Theorem of Calculus!</li>
+                            <li>Antiderivatives</li>
+                            <li>A quick mention to Substitution</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Friday, Jan 26th</td>
+                    <td>Substitution</td>
+                    <td>
+                        <ul>
+                            <li><a>Check Class Jam/Group Jam for exercise.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Substitution, Integration by part</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monday, Feb 1st</td>
+                    <td>Integration by parts/Partial Fraction</td>
+                    <td>
+                        <ul>
+                            <li><a>Exercise see Jamboard</a></li>
+                            <li><a href="./Note/Chapter7/116-partial_fractions_handout.pdf">Partial Fraction Handout.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Integration by Parts</li>
+                            <li>Integration by Partial Fraction</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuesday, Feb 2st</td>
+                    <td>Trigonometric Substitution/Partial Fraction</td>
+                    <td>
+                        <ul>
+                            <li><a>Exercise see Jamboard</a></li>
+                            <li><a href="./Note/Chapter7/116-partial_fractions_handout.pdf">Partial Fraction Handout.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Integration by Parts</li>
+                            <li>Integration byTrigonometric Substitution</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday, Feb 4th</td>
+                    <td>Partial Fraction</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter7/AbstractProblem.pdf">Exercises of Integration Technique.</a></li>
+                            <li><a href="./Note/Chapter7/AbstractProblem_soln.pdf">Solutions of exercises of Integration Technique.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Integration by Partial Fractions</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monday, Feb 8th</td>
+                    <td>7.5: Fundamental theorem of Calculus application/Riemann Sums</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter7/Riemannsum.pdf">Exercises of Riemann Sums.</a></li>
+                            <li><a href="./Note/Chapter7/Riemannsum_soln.pdf">Solutions of exercises of Riemann Sums.</a></li>
+                            <li><a href="./Note/Chapter7/ch7.pdf">Summary of Chapter 7</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Integration by Partial Fractions</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>February, Feb 9th</td>
+                    <td>8.1</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter7/Riemannsum.pdf">Exercises of Riemann Sums.</a></li>
+                            <li><a href="./Note/Chapter7/Riemannsum_soln.pdf">Solutions of exercises of Riemann Sums.</a></li>
+                            <li><a href="./Note/Chapter7/ch7.pdf">Summary of Chapter 7</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Integration of Area</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday, Feb 11th</td>
+                    <td>8.2: Disk Method/Shell Method/Cross Section</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter8/VolumeIntegral.pdf">Exercises of Volume.</a></li>
+                            <li><a href="./Note/Chapter8/VolumeIntegral_soln.pdf">Solutions of exercises of Volume.</a></li>
+                            <li><a href="./Note/Chapter8/ch8.pdf">Summary of Chapter 8</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Integration of Volume</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monday, Feb 15th</td>
+                    <td>8.4: Mass + 8.5: Work (slicing object)</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter8/Work1.pdf">Exercises of Work.</a></li>
+                            <li><a href="./Note/Chapter8/Work1_soln.pdf">Solutions of exercises of Work.</a></li>
+                            <li><a href="./Note/Chapter8/ch8.pdf">Summary of Chapter 8</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Integration of Mass/Work</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuesday, Feb 16th</td>
+                    <td>8.4: Mass + 8.5: Work (slicing object)</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter8/Work1.pdf">Exercises of Work.</a></li>
+                            <li><a href="./Note/Chapter8/Work1_soln.pdf">Solutions of exercises of Work.</a></li>
+                            <li><a href="./Note/Chapter8/ch8.pdf">Summary of Chapter 8</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Integration of Mass/Work</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday, Feb 18th</td>
+                    <td>Exam Review</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Exam/Exam1.pdf">Summary of Exam Materials in Exam 1</a></li>
+                            <li><a href="./Note/Chapter7/7-4.pdf">Extra handout for 7.4</a></li>
+                            <li><a href="./Note/Chapter7/7-4_soln.pdf">Solution for extra handout for 7.4</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Exam Review</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Monday, Feb 22th</td>
+                    <td>Exam Review</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Exam/Exam1.pdf">Summary of Exam Materials in Exam 1</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Exam Review</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Tuesday, Feb 23th</td>
+                    <td>Section 8.5(work for slicing distance traveled)</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Exam/Exam1.pdf">Summary of Exam Materials in Exam 1</a></li>
+                            <li><a href="./Note/Chapter8/Work2.pdf">Problems for 8.5, part 2</a></li>
+                            <li><a href="./Note/Chapter8/Work2_soln.pdf">Solution for 8.5, part 2</a></li>
+                            <li><a href="./Note/Chapter8/ch8.pdf">Summary of Chapter 8 before Probability</a></li>
+                            <li>Check Jamboard for details.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Work for slicing distance traveled.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Thursday, Feb 25th</td>
+                    <td>4.7 L'Hopital</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter7/4-67-6.pdf">Extra handout for 4.7 and 7.6</a></li>
+                            <li><a href="./Note/Chapter7/4-67-6_soln.pdf">Solution for extra handout for 4.7 and 7.6</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>L'Hopital's Rule</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monday, March 1st</td>
+                    <td>7.6 Improper Integral</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter7/4-67-6.pdf">Extra handout for 4.7 and 7.6</a></li>
+                            <li><a href="./Note/Chapter7/4-67-6_soln.pdf">Solution for extra handout for 4.7 and 7.6</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Improper Integral and how to calculate them.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuesday, March 2nd</td>
+                    <td>7.7 Comparison Test</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter7/7-7.pdf">Handout for 7.7</a></li>
+                            <li><a href="./Note/Chapter7/7-7_soln.pdf">Solution for handout for 7.7</a></li>
+                            <li><a href="./Note/Chapter7/ch7-part2.pdf">Review of chapter 7's improper integral material</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Comparison Test, Introduced</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday, March 4th</td>
+                    <td>Probability</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter8/probability.pdf">Handout for Probability.</a></li>
+                            <li><a href="./Note/Chapter8/probability_soln.pdf">Solution for extra handout for Probability.</a></li>
+                            <li><a href="./Note/Chapter8/ch8-part2.pdf">Review of chapter 8's Probability material</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Definition of PDF, CDF and their properties</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monday, March 8th</td>
+                    <td>Probability</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter8/probability.pdf">Handout for Probability.</a></li>
+                            <li><a href="./Note/Chapter8/probability_soln.pdf">Solution for extra handout for Probability.</a></li>
+                            <li><a href="./Note/Chapter8/ch8-part2.pdf">Review of chapter 8's Probability material</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Definition of PDF, CDF and their properties</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuesday, March 9th</td>
+                    <td>Probability, CDF, PDF, Normal distribution</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter8/probability.pdf">Handout for Probability.</a></li>
+                            <li><a href="./Note/Chapter8/probability_soln.pdf">Solution for extra handout for Probability.</a></li>
+                            <li><a href="./Note/Chapter8/ch8-part2.pdf">Review of chapter 8's Probability material</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>PDF, CDF properties</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday, March 11th</td>
+                    <td>Sequences</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter9/Sequences.pdf">Handout for Sequences.</a></li>
+                            <li><a href="./Note/Chapter9/Sequences_soln.pdf">Solution for Sequences.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Definition of PDF, CDF and their properties</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monday, March 15th</td>
+                    <td>Geometric Series</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter9/GeometricSeries.pdf">Handout for Geometric Series.</a></li>
+                            <li><a href="./Note/Chapter9/GeometricSeries_soln.pdf">Solution for Geometric Series.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Definition of PDF, CDF and their properties</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuesday, March 16th</td>
+                    <td>n-th term test/Integral Test for series</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter9/ConvergenceofSeries.pdf">Handout for n-th term test/Integral Test for series.</a></li>
+                            <li><a href="./Note/Chapter9/ConvergenceofSeries_soln.pdf">Solution for n-th term test/Integral Test for series.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Definition of Series</li>
+                            <li>n-th term test and integral test for series</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday, March 17th</td>
+                    <td>Comparison Tests/Limit Comparison Tests for Series</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter9/MoreConvergenceofSeries.pdf">Handout for Series Convergence Tests.</a></li>
+                            <li><a href="./Note/Chapter9/MoreConvergenceofSeries_soln.pdf">Solution for Series Convergence Tests.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Comparison Tests/Limit Comparison Tests for Series</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monday, March 22th</td>
+                    <td>Absolute Convergence/Alternating Series Test/Raio Test for Series</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter9/MoreConvergenceofSeries.pdf">Handout for Series Convergence Tests.</a></li>
+                            <li><a href="./Note/Chapter9/MoreConvergenceofSeries_soln.pdf">Solution for Series Convergence Tests.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Convergence of Series: Absolute Convergence, Alternating Series Test, Ratio Test.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday, March 25th</td>
+                    <td>Exam 2 Review</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter9/ch9.pdf">Summary of Chapter 9.</a></li>
+                            <li><a href="./Note/Exam/exam2.pdf">Summary of Exam 2 Material.</a></li>
+                            <li>Exam 2 Jamboard.</li>
+                            <li><a href="http://www.math.lsa.umich.edu/courses/116/Resources/index.html">FORMATTING that you need to pay attention in the exam.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Convergence of Series: Absolute Convergence, Alternating Series Test, Ratio Test.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monday, March 29th</td>
+                    <td>Exam 2 Review</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter9/ch9.pdf">Summary of Chapter 9.</a></li>
+                            <li><a href="./Note/Exam/exam2.pdf">Summary of Exam 2 Material.</a></li>
+                            <li>Exam 2 Jamboard.</li>
+                            <li><a href="http://www.math.lsa.umich.edu/courses/116/Resources/index.html">FORMATTING that you need to pay attention in the exam.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Convergence of Series: Absolute Convergence, Alternating Series Test, Ratio Test.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuesday, March 30th</td>
+                    <td>Chapter 9.5, Power Series</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter9/PowerSeries.pdf">Handout for Power Series.</a></li>
+                            <li><a href="./Note/Chapter9/PowerSeries_soln.pdf">Solution for Power Series.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Power Series.</li>
+                            <li>Radius of Convergence.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday, Apr 1st</td>
+                    <td>10.1+10.2 Taylor Polynomial/Taylor Series</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter10/taylor_polynomial.pdf">Exercises for Taylor Polynomial and Taylor Series.</a></li>
+                            <li><a href="./Note/Chapter10/taylor_polynomial_solution.pdf">Solutions for Taylor Polynomial and Taylor Series.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Taylor Polynomial.</li>
+                            <li>Taylor Series.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monday, Apr 5th</td>
+                    <td>10.2 Taylor Series</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter10/taylor_polynomial.pdf">Exercises for Taylor Polynomial and Taylor Series.</a></li>
+                            <li><a href="./Note/Chapter10/taylor_polynomial_solution.pdf">Solutions for Taylor Polynomial and Taylor Series.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Taylor Series.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuesday, Apr 6th</td>
+                    <td>10.3 More on Taylor Series</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/Chapter10/taylor_series.pdf">Exercises for More Problems on Taylor Series.</a></li>
+                            <li><a href="./Note/Chapter10/taylor_series_solution.pdf">Solutions for More Problems on Taylor Series.</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Taylor Series.</li>
+                            <li>Manipulating the Taylor series.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday, Apr 8th</td>
+                    <td>4.8 Parametrization</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/ParamAndPolar/Parametrization.pdf">Problems for Parametrization</a></li>
+                            <li><a href="./Note/ParamAndPolar/Parametrization_solution.pdf">Solution for Parametrization</a></li>
+                    </td>
+                    <td>
+                        <li>Section on Parametrization.</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monday, Apr 12th</td>
+                    <td>8.2 Parametrization and arclength</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/ParamAndPolar/Parametrization_arclength.pdf">Problems for Parametrization, more</a></li>
+                            <li><a href="./Note/ParamAndPolar/Parametrization_arclength_solution.pdf">Solution for Parametrization, more</a></li>
+                    </td>
+                    <td>
+                        <li>Section on Parametrization and arc length, start Polar Coordinate.</li>
+                    </td>
+                </tr>
+                <!------------------------->
+                <!------------------------->
+                <tr>
+                    <td>Tuesday, Apr 13th</td>
+                    <td>8.3 Polar Coordinate</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/ParamAndPolar/Polar.pdf">Problems for Polar Coordinate</a></li>
+                            <li><a href="./Note/ParamAndPolar/Polar_solution.pdf">Solution for Polar Coordinate</a></li>
+                            <li><a href="./Note/ParamAndPolar/pap.pdf">Summary of Parametric Equation and Polar coordinate</a></li>
+                    </td>
+                    <td>
+                        <li>Polar Coordinate.</li>
+                    </td>
+                </tr>
+                <!------------------------->
+                <!------------------------->
+                <tr>
+                    <td>Thursday, Apr 15th</td>
+                    <td>Review of Polar Coordinates</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/FinalReview/ParamAndPolar.pdf">Problems for review 1.</a></li>
+                            <li><a href="./Note/FinalReview/ParamAndPolar_solution.pdf">Solution for review 1.</a></li>
+                            <li><a href="./Note/ParamAndPolar/pap.pdf">Summary of Parametric Equation and Polar coordinate</a></li>
+                    </td>
+                    <td>
+                        <li>Review 1.</li>
+                    </td>
+                </tr>
+                <!------------------------->
+                <!------------------------->
+                <tr>
+                    <td>Monday, Apr 19th</td>
+                    <td>Review of Parametrizations, Taylor Polynomials and Taylor Series.</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/FinalReview/ParamAndPolar.pdf">Problems for review 1.</a></li>
+                            <li><a href="./Note/FinalReview/ParamAndPolar_solution.pdf">Solution for review 1.</a></li>
+                            <li><a href="./Note/FinalReview/taylor_series.pdf">Problems for review 2.</a></li>
+                            <li><a href="./Note/FinalReview/taylor_series_soln.pdf">Solution for review 2.</a></li>
+                            <li><a href="./Note/ParamAndPolar/pap.pdf">Summary of Parametric Equation and Polar coordinate</a></li>
+                    </td>
+                    <td>
+                        <li>Review 2.</li>
+                    </td>
+                </tr>
+                <!------------------------->
+                <!------------------------->
+                <tr>
+                    <td>Tuesday, Apr 20th</td>
+                    <td>La Dernière Classe.</td>
+                    <td>
+                        <ul>
+                            <li><a href="./Note/FinalReview/lastmin.pdf">Last Minute Review</a></li>
+                            <li><a href="./Note/FinalReview/lastmin_solution.pdf">Last Minute Review-solution</a></li>
+                            <li><a href="./Note/FinalReview/exam1summary.pdf">Summary of Exam 1 material.</a></li>
+                            <li><a href="./Note/FinalReview/exam2.pdf">Summary of Exam 2 material.</a></li>
+                            <li><a href="./Note/FinalReview/finalsummary.pdf">Summary of Post Exam 2 material.</a></li>
+                            <li><a href="./Note/FinalReview/justformula.pdf">Summary of Class material, in the simplest form.</a></li>
+                    </td>
+                    <td>
+                        <li>Math, a lifelong class...</li>
+                    </td>
+                </tr>
+                <!------------------------->
+            </table>
+        </div>
+    </section>
+    </div>
+    <div id="Class information">
+        <h2>Size of the webpage so far: (Completed).</h2>
+    </div>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; Yiwang Chen. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                <!-- hitwebcounter Code START -->
+                Web counter:
+                <img src="https://hitwebcounter.com/counter/counter.php?page=7672320&style=0008&nbdigits=5&type=page&initCount=0" title="Total Website Hits" Alt="Web Hits" border="0" />
+            </ul>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

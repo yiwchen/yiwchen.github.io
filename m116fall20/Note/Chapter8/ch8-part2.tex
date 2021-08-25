@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsfonts,amsmath, amssymb,latexsym,mathrsfs}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{enumitem}
+\setlength{\parindent}{0pt}
+\usepackage{tikz-cd}
+\usepackage{fancyhdr}
+
+
+
+
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}[section]
+
+\newtheorem{prop}{Proposition}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{lem}{Lemma}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{cor}{Corollary}[section]
+
+
+\date{}
+\title{Chapter 8: Application of integral in real life}
+
+
+\begin{document}
+\maketitle
+
+\section{Probability}
+\subsection{PDF and CDF}
+\begin{definition}
+A function $p(x)$ is a \textbf{probability density function} or PDF if it satisfies the following conditions
+\begin{itemize}
+\item $p(x) \geq 0$ for all $x$.
+\item $\int_{-\infty}^\infty p(x) = 1.$
+\end{itemize}
+\end{definition}
+
+\begin{definition}
+A function $P(t)$ is a \textbf{Cumulative Distribution Function} or cdf, of a density function $p(t)$, is defined by 
+\[P(t) =\int_{-\infty}^t p(x) dx \]
+Which means that $P(t)$ is the antiderivative of $p(t)$ with the following properties:
+\begin{itemize}
+\item $P(t)$ is increasing and $0\leq P(t)\leq 1$ for all $t$.
+\item $\lim_{t \to \infty}P(t)=1.$
+\item $\lim_{t \to -\infty}P(t)=0.$
+\end{itemize}
+\end{definition}
+
+Moreover, we have $\int_a^b p(x)dx=P(b)-P(a)$.
+
+\subsection{Probability, mean and median}
+
+\subsubsection*{Probability}
+Let us denote $X$ to be the quantity of outcome that we care ($X$ is in fact, called the random variable).
+\[\mathbb{P}\{a\leq X\leq b\}=\int_a^b p(x)dx=P(b)-P(a)\]
+\[\mathbb{P}\{X\leq t\}=\int_{-\infty}^t p(x)dx=P(t)\]
+\[\mathbb{P}\{X\geq s\}=\int_{s}^\infty p(x)dx=1-P(s)\]
+
+\subsubsection*{The mean and median}
+\begin{definition}
+A \textbf{median} of a quantity $X$ is a value $T$ such that the probability of $X\leq T$ is $1/2$. Thus we have  $T$ is defined by the value such that
+\[ \int_{-\infty}^T p(x) dx=1/2 \] or \[P(T)=1/2\].
+\end{definition}
+\begin{definition} A \textbf{mean} of a quantity $X$ is the value given by
+	\[ Mean= \frac{\text{Probability of all possible quantity}}{\text{Total probability}}= \frac{\int_{-\infty}^{\infty}xp(x)dx}{\int_{-\infty}^{\infty}p(x)dx}=\frac{\int_{-\infty}^{\infty}xp(x)dx}{1}=\int_{-\infty}^{\infty}xp(x)dx. \]
+\end{definition}
+
+\subsubsection*{Normal Distribution}
+\begin{definition}
+A normal distribution has a density function of the form 
+\[p(x)=\frac{1}{\sigma \sqrt{2 \pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}\] where $\mu$ is the mean of the distribution and $\sigma$ is the standard deviation, with $\sigma > 0$.
+The case $\mu = 0$, $\sigma = 1$ is called the standard normal distribution.
+
+\end{definition}
+\end{document} 

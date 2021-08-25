@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsfonts,amsmath, amssymb,latexsym,mathrsfs}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{enumitem}
+\setlength{\parindent}{0pt}
+\usepackage{tikz-cd}
+\usepackage{fancyhdr}
+
+
+
+
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}[section]
+
+\newtheorem{prop}{Proposition}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{lem}{Lemma}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{cor}{Corollary}[section]
+
+
+\date{}
+\title{Parametrization and Polar Coordinates}
+
+
+\begin{document}
+\maketitle
+\section{Parametric Equations and Polar Coordinate}
+\subsection{Parametric Equations}
+To represent the motion of a particle in the $xy$-plane we use two equations, $x=f(t)$ and $y=g(t)$, then at the time $t$ the particle is at the location $(f(t),g(t)$. In this case, we call the equations for $x$ and $y$ the parametric equations, with parametrization $t$.
+
+Remember that, in parametric equation, for the same line, the parametrization is not unique, and the different parametrization encodes two information:\\
+1. Speed of the particle.\\
+2. Direction of the motion.\\
+
+\subsubsection{Special Parametric Equations}
+
+\begin{itemize}
+\item \textcolor{red}{Parametric Equations for a Straight Line}
+
+An object moving along a line through the point $(x_0, y_0)$, with $dx/dt = a$ and $dy/dt = b$,
+has parametric equations
+$x = x_0 + at, y = y_0 + bt$.
+The slope of the line is $m = b/a$.
+\item\textcolor{red}{Parametric Equations for a circle with radius $k$}
+
+An object moving along a circle of radius $k$ counterclockwise has parametric equations
+$x = k\cos(t), y = k\sin(t)$.
+\end{itemize}
+
+
+\subsubsection{Slope and concavity of the curve}
+As we discussed in class, we can think of this as a result due to chain rule if we have that $y=F(x)$ as well. 
+
+But to summarize, we have the \textcolor{red}{slope} of the parametrized curve to be 
+\[\frac{dy}{dx}=\frac{dy/dt}{dx/dt}\]
+and the \textcolor{red}{concavity} of the parametrized curve to be
+\[\frac{d^2y}{dx^2}=\frac{(dy/dx)/dt}{dx/dt}\]
+
+\subsubsection{Speed and distance}
+
+The \textcolor{red}{instantaneous speed} of a moving object is defined to be
+$$v = \sqrt{(dx/dt)^2 + (dy/dt)^2} =\sqrt{(v_x)^2 + (v_y)^2}$$.
+The quantity $v_x = dx/dt$ is the instantaneous velocity in the $x$-direction; $v_y = dy/dt$ is the
+instantaneous velocity in the $y$-direction.
+And we call that $(v_x,v_y)$ to be the velocity vector.
+
+Moreover, the \textcolor{red}{distance} traveled from time $a$ to $b$ is $$\int^b_a v(t) dt = \int_a^b \sqrt{(dx/dt)^2 + (dy/dt)^2} dt$$
+
+\subsection{Polar Coordinate}
+
+Polar coordinates is the coordinates determined by specifying the distance of the point to origin and the angle measured counterclockwise from positive $x$-axis to the line joining the line connecting the point and the origin.
+
+\subsubsection{Relation between Cartesian and Polar}
+
+\textcolor{red}{Cartesian to Polar}: $$(x,y) \to (r= \sqrt{x^2 + y^2}, \theta) \text{ (Here we have that } \tan \theta = \frac{y}{x} \text{)}$$
+Note that $\theta$ does not have to be $\arctan(\frac{y}{x})$!
+
+\textcolor{red}{Polar to Cartesian}: $$(r,\theta) \to (x=r \cos \theta, y=r \sin \theta)$$
+
+\subsubsection{Slope, Arc length and Area in Polar Coordinates}
+
+By the relation $x=r \cos \theta, y=r \sin \theta$, given a curve $r=f(\theta)$, we have that $x=f(\theta) \cos \theta, y=f(\theta) \sin \theta$, and thus are parametrized equations of parameter $\theta$. Therefore we have that the \textcolor{red}{slope} of to be 
+\[\frac{dy}{dx}=\frac{dy/d\theta}{dx/d\theta}\]
+
+The \textcolor{red}{arc length} from angle $a$ to $b$ is $$\int_a^b \sqrt{(dx/d\theta)^2 + (dy/d\theta)^2} d\theta$$
+
+Moreover, due to the fact that the \textcolor{red}{area of the sector} is $1/2 r^2 \theta$, we have that for a curve $r = f(\theta)$, with \textcolor{red}{$f(\theta) \geq 0$}, the area of the region enclosed is $$\frac{1}{2}\int^{b}_{a}f(\theta)^2 d\theta$$
+
+\end{document} 

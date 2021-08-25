@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsfonts,amsmath, amssymb,latexsym,mathrsfs}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{enumitem}
+\setlength{\parindent}{0pt}
+\usepackage{tikz-cd}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage}
+\rhead{Note for Calculus}
+
+
+
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}[section]
+
+\newtheorem{prop}{Proposition}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{lem}{Lemma}[section]
+
+
+\theoremstyle{definition}
+\newtheorem{cor}{Corollary}[section]
+
+
+\date{}
+\title{Summary of 4.7 to 7.7}
+
+
+\begin{document}
+\maketitle
+
+\section{L'Hopital's rule}
+
+L’Hopital’s rule: If $f$ and $g$ are differentiable and (below $a$ can be $\pm \infty$)\\
+i)$f(a) = g(a) = 0$ for finite $a$, \\
+Or ii)$\lim_{x\to a} f(x)=\lim_{x\to a} g(x)= \pm \infty$,\\ 
+Or iii)$\lim_{x\to \infty} f(x)= \lim_{x\to \infty} g(x) = 0$
+then 
+\[\lim_{x\to a}\frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)} \]
+
+\subsection{Dominance}
+We say that $g$ dominates $f$ as $x \to \infty$ if $\lim_{x\to \infty}f(x)/g(x) = 0$. 
+\subsection{How to determine some bad limit?}
+
+There are several types of the limits that is ''bad'' which requires L'Hopital's rule to calculate:
+$0/0, \infty/\infty, \infty\cdot0$. Although the first two cases we can use L'Hopital's rule to calculate, the others we cannot use it directly.
+
+Read the book, and there are several things that we can consider.
+\begin{itemize}
+	\item Consider taking log.
+	\item Consider $1/f(x)$ so that we can transform $\infty$ to '$1/0$' or $0$ to '$1/\infty$'.
+\end{itemize}
+
+\section{Improper integral}
+Formal definition of the improper integral I will let you read the book carefully, they are in the box. 
+However, informally, there are two types of improper integral which we just interpret them as a limit.
+
+\begin{itemize}
+	\item The first case is where we have the limit of the integration goes to infinity, i.e. $\lim_{b \to \infty} \int^b_a f(x) dx$.
+	\item The integrand goes to infinity as $x \to a$.
+\end{itemize}
+
+\subsection{Converges or diverges?}
+The basic question that one want to know about the improper integral is basically is it well defined?
+
+This turns to ask if an improper integral converges or not.
+
+There are four ways people ususally use to check this fact.
+\begin{enumerate}
+	\item Check by definition, this means check the limit directly.
+	\item $p$-test.\\
+	\includegraphics*[width=0.9\textwidth]{1.png}
+	\item Exponential decay test. 
+	\[\int^\infty_0 e^{-ax} dx\] converges for $a>0$.
+	\item Comparison test.\\
+	If $f(x)\geq g(x) \geq 0$ on the interval $[a,\infty]$ then,\begin{itemize}
+	\item If $\int^\infty_a f(x) dx$ converges then so does $\int^\infty_a g(x) dx$.
+	\item If $\int^\infty_a g(x) dx$ diverges then so does $\int^\infty_a f(x) dx$.
+	\end{itemize}
+	\item Limit Comparison theorem.\\
+	Limit Comparison Test. If $f(x)$ and $g(x)$ are both positive  on the interval $[a,b)$ where $b$ could be a real number or infinity.
+	and
+	\[\lim_{x\to b}\frac{f(x)}{g(x)} = C\] such that $0 < C < \infty$
+	then the improper integrals $\int^b_a f(x) dx$ and $\int^b_a g(x) dx$ are either both convergent or both divergent.
+
+\end{enumerate}
+
+
+\end{document} 
